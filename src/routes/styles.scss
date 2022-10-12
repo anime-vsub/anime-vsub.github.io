@@ -1,0 +1,11 @@
+body {
+	@apply bg-[#000] text-[#9ca9b3];
+}
+
+.text-main {
+	color: #f7ed4a;
+}
+
+.w-response {
+	@apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px];
+}
