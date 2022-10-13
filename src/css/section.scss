@@ -1,92 +1,92 @@
 .section {
-	@apply text-center;
+  @apply text-center;
 
-	.title {
-		@apply relative pb-3 text-[32px] font-weight-medium text-center inline-block text-white;
+  .title {
+    @apply relative pb-3 text-[32px] font-weight-medium text-center inline-block text-white;
 
-		&:before {
-			content: '';
-			@apply absolute bottom-0 left-1/2 transform translate-x-[-50%];
-			@apply bg-[var(--c-main)] w-10 h-[3px];
-			border-radius: 4px;
-		}
-	}
-	.subtitle {
-		@apply mb-2 mt-3 text-[16px] font-weight-normal text-[#9ca9b3];
-	}
+    &:before {
+      content: '';
+      @apply absolute bottom-0 left-1/2 transform translate-x-[-50%];
+      @apply bg-[var(--c-main)] w-10 h-[3px];
+      border-radius: 4px;
+    }
+  }
+  .subtitle {
+    @apply mb-2 mt-3 text-[16px] font-weight-normal text-[#9ca9b3];
+  }
 
-	.box {
-		@apply md:mx-[15px] px-12 py-12;
-		@apply bg-[#161616] mb-12 mt-8;
-		&-list {
-			@apply py-10 text-left;
-		}
-		background-color: #161616;
-		margin-bottom: 3rem;
-		z-index: 2;
-		box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
-	}
+  .box {
+    @apply md:mx-[15px] px-12 py-12;
+    @apply bg-[#161616] mb-12 mt-8;
+    &-list {
+      @apply py-10 text-left;
+    }
+    background-color: #161616;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  }
 
-	.card {
-		@apply bg-[#161616] rounded-xl py-10 px-[20px] mb-12;
-		box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
-		@apply w-full md:mx-4;
+  .card {
+    @apply bg-[#161616] rounded-xl py-10 px-[20px] mb-12;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    @apply w-full md:mx-4;
 
-		.large-icon {
-			@apply transition duration-[500ms] ease;
-			@apply inline-block rounded-1/2 w-[100px] h-[100px] flex items-center justify-center mb-4 mx-auto;
-		}
+    .large-icon {
+      @apply transition duration-[500ms] ease;
+      @apply inline-block rounded-1/2 w-[100px] h-[100px] flex items-center justify-center mb-4 mx-auto;
+    }
 
-		&:hover {
-			.large-icon {
-				@apply bg-[var(--c-main)];
-				box-shadow: 0 0 0 10px #cde1f8;
-			}
-		}
+    &:hover {
+      .large-icon {
+        @apply bg-[var(--c-main)];
+        box-shadow: 0 0 0 10px #cde1f8;
+      }
+    }
 
-		&-title {
-			@apply py-[6.4px] mb-2 text-[1.5rem] font-weight-medium text-white;
-		}
-	}
+    &-title {
+      @apply py-[6.4px] mb-2 text-[1.5rem] font-weight-medium text-white;
+    }
+  }
 
-	.splitter {
-		@apply py-10 text-left flex flex-wrap md:flex-nowrap;
+  .splitter {
+    @apply py-10 text-left flex flex-wrap md:flex-nowrap;
 
-		&-content {
-			@apply sm:mr-8 md:mr-16 sm:w-[396px] lg:w-[488px];
-		}
+    &-content {
+      @apply sm:mr-8 md:mr-16 sm:w-[396px] lg:w-[488px];
+    }
 
-		&.splitter-reverse {
-			@apply flex-row-reverse;
-			.splitter-content {
-				@apply sm:ml-8 md:ml-16 sm:mr-0;
-			}
-		}
+    &.splitter-reverse {
+      @apply flex-row-reverse;
+      .splitter-content {
+        @apply sm:ml-8 md:ml-16 sm:mr-0;
+      }
+    }
 
-		&-rank {
-			@apply text-[16px] font-weight-medium text-[var(--c-main)] mb-2;
-		}
+    &-rank {
+      @apply text-[16px] font-weight-medium text-[var(--c-main)] mb-2;
+    }
 
-		&-title {
-			@apply mb-4 text-[1.75rem] sm:text-[32px] inline-block;
-			background: var(--l-main);
-			font-weight: 700;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
+    &-title {
+      @apply mb-4 text-[1.75rem] sm:text-[32px] inline-block;
+      background: var(--l-main);
+      font-weight: 700;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-		&-images {
-			@apply md:whitespace-nowrap overflow-x-auto scrollbar-hide min-w-0 flex-1 md:w-auto w-full;
-			img {
-				@apply inline-block relative py-[20px] block mx-auto sm:inline-block md:px-[20px];
-			}
-		}
-	}
+    &-images {
+      @apply md:whitespace-nowrap overflow-x-auto scrollbar-hide min-w-0 flex-1 md:w-auto w-full;
+      img {
+        @apply inline-block relative py-[20px] block mx-auto sm:inline-block md:px-[20px];
+      }
+    }
+  }
 
-	.list {
-		@apply list-greek pl-[15px] mb-4 ml-3;
-		> li {
-			@apply mb-3;
-		}
-	}
+  .list {
+    @apply list-greek pl-[15px] mb-4 ml-3;
+    > li {
+      @apply mb-3;
+    }
+  }
 }

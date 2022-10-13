@@ -1,21 +1,21 @@
 body {
-	@apply bg-[#000] text-[#9ca9b3];
+  @apply bg-[#000] text-[#9ca9b3];
 
-	--c-main: rgb(0, 194, 52);
-	--l-main: linear-gradient(45deg, rgb(0, 194, 52) 20%, #2e73ff 72%);
+  --c-main: rgb(0, 194, 52);
+  --l-main: linear-gradient(45deg, rgb(0, 194, 52) 20%, #2e73ff 72%);
 }
 
 .text-main {
-	color: (var(--c-main))
+  color: (var(--c-main));
 }
 .bg-main {
-	background-color:(var(--c-main));
+  background-color: (var(--c-main));
 }
 .bg-linear-main {
-	background-color: var(--c-main);
-	background: var(--l-main);
+  background-color: var(--c-main);
+  background: var(--l-main);
 }
 
 .w-response {
-	@apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px];
+  @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px];
 }

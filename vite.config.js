@@ -4,7 +4,7 @@ import WindiCSS from 'vite-plugin-windicss';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [WindiCSS(), sveltekit()]
+  plugins: [WindiCSS(), sveltekit()]
 };
 
 export default config;
