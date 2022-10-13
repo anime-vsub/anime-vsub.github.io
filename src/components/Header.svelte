@@ -32,7 +32,7 @@
 >
 	<div class="w-response mx-auto flex flex-wrap items-center justify-between">
 		<a href="/">
-			<img src="https://pikashows.com/assets/img/logo.png" alt="logo" class="w-14 h-14" />
+			<img src="/src/lib/images/animevsub.svg" alt="AnimeVsub" class="w-14 h-14" />
 		</a>
 
 		<button

@@ -1,4 +1,7 @@
 <script lang="ts">
+export let data;
+
+
 	import { onMount } from 'svelte';
 	// import Typed from 'typed.js';
 	import Icon from '@iconify/svelte';
@@ -6,15 +9,18 @@
 
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
-import Typed from "typed.js"
+	import Typed from "typed.js"
 	import { browser } from '$app/environment';
-	
+
+const { meta, features } = data
+
+// =========== logic ============
 	let captionRef//: HTMLSpanElement;
 
 	if (browser)
 		onMount(() => {
 			new Typed(captionRef, {
-				strings: ['Latest TV Shows'],
+				strings: meta.strings,
 				typeSpeed: 80,
 				loop: true,
 				backDelay: 1100,
@@ -44,56 +50,53 @@ import Typed from "typed.js"
 
 <main class="w-response mx-4 sm:mx-auto">
 	<div class=" mt-[64px] section">
-		<h4 class="title">Download</h4>
+		<h4 class="title">{meta.download.name}</h4>
 
 		<div class="box">
-			<div class="mb-4">
-				PikaShow App will give you a chance to enjoy unlimited entertainment easier than on any
-				other platform.
-			</div>
+			<div class="mb-4 whitespace-pre-wrap">{meta.download.description}</div>
 
-			<div class="mb-4">Download PikaShow APK from below.</div>
+			<!-- <div class="mb-4"></div> -->
 
-			<button class="btn"> PikaShow APK (v82) </button>
+			<a target="_blank" href="{meta.download.file}">
+				<button class="btn">{meta.download.versionName}</button>
+			</a>
 		</div>
 
 		<div class="flex flex-wrap md:flex-nowrap">
-			{#each Array(3) as i}
+			{#each meta.cards as card}
 				<div class="card">
 					<div class="large-icon">
-						<img src="https://pikashows.com/assets/img/pikashow.svg" alt="pika" width="70" />
+						<img src="{card.icon}" alt="pika" width="70" />
 					</div>
 
-					<div class="card-title">What is PikaShow?</div>
+					<div class="card-title">{card.title}</div>
 
-					PikaShow App is a streaming platform for Android! Includes live cricket, TV shows, New
-					Movies, Download Videos, and lot more. All in one entertainment application provides
-					premium content for free.
+					{card.content}
 				</div>
 			{/each}
 		</div>
 	</div>
 	<div class="section">
 		<h4 class="title">
-			Features
-			<p class="subtitle">List of all the exclusive features of PikaShow App.</p>
+			{features.name}
+			<p class="subtitle">{features.description}</p>
 		</h4>
 
-		{#each Array(3) as item, index}
+		{#each features.items as feature, index}
 			<div class="splitter" class:splitter-reverse={index % 2 === 1}>
 				<div class="splitter-content">
 					<div class="splitter-rank">#{index + 1}</div>
-					<div class="splitter-title">Main Features:</div>
+					<div class="splitter-title">{feature.title}</div>
 
 					<ul class="list-greek pl-[15px] mb-4">
-						{#each ['The PikaShow APK is compatible with any android device including smartphones and tablets. It runs and plays videos smoothly without any lags reported.', 'Features capability of downloading movies and TV shows on your device. You can choose whether a stream or download the video and watch it offline.', 'Supports subtitles for every video. You can enable subtitles while watching. In any case, if subtitles are not available, you will be able to search online for subtitles with the option given in the app.', 'Screen casting option gives you the chance to cast your mobile screen to TV without hesitation.', 'PikaShow App supports Android TV and FireStick too.'] as item}
+						{#each feature.uls as item}
 							<li class="mb-3">{item}</li>
 						{/each}
 					</ul>
 				</div>
 				<div class="splitter-images">
-					{#each Array(2).fill('https://pikashows.com/assets/img/features_1.webp') as item}
-						<img src={item} alt="screen" />
+					{#each feature.images as image}
+						<img src={image} alt="screenshot" />
 					{/each}
 				</div>
 			</div>

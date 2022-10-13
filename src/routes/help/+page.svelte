@@ -1,5 +1,9 @@
 <script lang="ts">
+export let data;
+
 	import '../../css/section.scss';
+
+const { sections } = data
 </script>
 
 <main class="w-response mx-4 sm:mx-auto">
@@ -8,17 +12,32 @@
 		<span class="text-white">Help</span>
 	</h1>
 
+	{#each sections as section}
 	<div class=" mt-[64px] section">
-		<div class="box">
-			<div class="mb-4">
-				Having trouble installing or using PikaShow APK on your Android device and TV? Android
-				version should be 4.0 or above.
-			</div>
+		{#if section.title}
+		<h4 class="title">{section.title}</h4>
+		{/if}
 
-			<div class="mb-4">The instructions to use the PikaShow app are below:</div>
+		<div class="box box-list">
+		{#if section.sub}
+<div class="text-main text-[1.5rem] font-weight-bold mb-4">{section.sub}</div>
+{/if}
+{#if section.sub2}
+<div class="text-[1rem] text-white mb-4">{section.sub2}</div>
+{/if}
+
+{#if section.content}
+			<div class="mb-4 whitespace-pre-wrap">{section.content}</div>
+{/if}
+
+{#if section.ols}
+					<ul class="list-decimal pl-[15px] mb-4">
+	{#each section.ols as item}
+	<li>{item}</li>
+	{/each}
+					</ul>
+					{/if}
 		</div>
 	</div>
+	{/each}
 </main>
-
-<style lang="scss">
-</style>

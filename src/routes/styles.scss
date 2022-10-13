@@ -1,8 +1,8 @@
 body {
 	@apply bg-[#000] text-[#9ca9b3];
 
-	--c-main: #f7ed4a;
-	--l-main: linear-gradient(45deg, #f7ed4a 20%, #c10023 72%);
+	--c-main: rgb(0, 194, 52);
+	--l-main: linear-gradient(45deg, rgb(0, 194, 52) 20%, #2e73ff 72%);
 }
 
 .text-main {

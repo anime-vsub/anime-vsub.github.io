@@ -16,8 +16,11 @@
 	}
 
 	.box {
-		@apply md:mx-[15px] px-12 py-16;
+		@apply md:mx-[15px] px-12 py-12;
 		@apply bg-[#161616] mb-12 mt-8;
+		&-list {
+			@apply py-10 text-left;
+		}
 		background-color: #161616;
 		margin-bottom: 3rem;
 		z-index: 2;
@@ -61,7 +64,7 @@
 		}
 
 		&-rank {
-			@apply text-[16px] font-weight-medium text-[#ff0032] mb-2;
+			@apply text-[16px] font-weight-medium text-[var(--c-main)] mb-2;
 		}
 
 		&-title {
