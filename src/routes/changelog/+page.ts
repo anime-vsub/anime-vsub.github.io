@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 
-export function load() {
+export async function load() {
   const name = 'PikaShow APK';
   const changelogs = [
     {

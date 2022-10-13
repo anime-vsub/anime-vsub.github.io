@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fontsource/fira-mono': ^4.5.0
   '@iconify/svelte': ^3.0.0
+  '@modyfi/vite-plugin-yaml': ^1.0.3
   '@neoconfetti/svelte': ^1.0.0
   '@sveltejs/adapter-auto': 1.0.0-next.83
   '@sveltejs/adapter-static': 1.0.0-next.44
@@ -25,6 +26,7 @@ dependencies:
 
 devDependencies:
   '@fontsource/fira-mono': 4.5.10
+  '@modyfi/vite-plugin-yaml': 1.0.3_vite@3.1.7
   '@neoconfetti/svelte': 1.0.0
   '@sveltejs/adapter-auto': 1.0.0-next.83
   '@sveltejs/adapter-static': 1.0.0-next.44
@@ -117,6 +119,18 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: true
+
+  /@modyfi/vite-plugin-yaml/1.0.3_vite@3.1.7:
+    resolution: {integrity: sha512-UB9A9b5h9v4fruyZPeLQh4k7ZF7KPrOuMnTfSIJD2WYXx9rHE0U19/RzLjFhDzWnTBPZWu6RoT4wxsaDkxXUzw==}
+    requiresBuild: true
+    peerDependencies:
+      vite: ^2.6.0 || ^3.0.0
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      js-yaml: 4.1.0
+      tosource: 2.0.0-alpha.3
+      vite: 3.1.7_sass@1.55.0
     dev: true
 
   /@neoconfetti/svelte/1.0.0:
@@ -348,6 +362,10 @@ packages:
     dependencies:
       delegates: 1.0.0
       readable-stream: 3.6.0
+    dev: true
+
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: true
 
   /async-sema/3.1.1:
@@ -838,6 +856,13 @@ packages:
     resolution: {integrity: sha512-L3BJStEf5NAqNuzrpfbN71dp43mYIcBUlCRea/vdyv5dW/AYa1d4bpelko4SHdY3I6eN9Wzyasxirj1/vv5kmg==}
     hasBin: true
     dev: false
+
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: true
 
   /kleur/4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
@@ -1359,6 +1384,11 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+
+  /tosource/2.0.0-alpha.3:
+    resolution: {integrity: sha512-KAB2lrSS48y91MzFPFuDg4hLbvDiyTjOVgaK7Erw+5AmZXNq4sFRVn8r6yxSLuNs15PaokrDRpS61ERY9uZOug==}
+    engines: {node: '>=10'}
+    dev: true
 
   /totalist/3.0.0:
     resolution: {integrity: sha512-eM+pCBxXO/njtF7vdFsHuqb+ElbxqtI4r5EAvk6grfAFyJ6IvWlSkfZ5T9ozC6xWw3Fj1fGoSmrl0gUs46JVIw==}
