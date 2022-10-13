@@ -6,14 +6,13 @@
 
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
-
+import Typed from "typed.js"
 	import { browser } from '$app/environment';
-	let captionRef;
+	
+	let captionRef:HTMLSpanElement;
 
 	if (browser)
 		onMount(() => {
-			console.log(captionRef);
-			return;
 			new Typed(captionRef, {
 				strings: ['Latest TV Shows'],
 				typeSpeed: 80,

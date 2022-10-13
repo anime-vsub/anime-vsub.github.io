@@ -7,6 +7,7 @@
 	import Footer from '../components/Footer.svelte';
 
 	import { browser } from '$app/environment';
+	// @ts-ignore
 	if (browser) import('virtual:windi-devtools');
 </script>
 

@@ -31,9 +31,9 @@
 	class:bouced={bounced || (opening && !gtSm)}
 >
 	<div class="w-response mx-auto flex flex-wrap items-center justify-between">
-  <a href="/">
-		<img src="https://pikashows.com/assets/img/logo.png" alt="logo" class="w-14 h-14" />
-</a>
+		<a href="/">
+			<img src="https://pikashows.com/assets/img/logo.png" alt="logo" class="w-14 h-14" />
+		</a>
 
 		<button
 			class="btn-hammer text-[50px] text-white md:hidden"
