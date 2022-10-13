@@ -1,6 +1,7 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
+  import logo from "$lib/images/animevsub.svg"
 
   import { browser } from '$app/environment';
 
@@ -33,7 +34,7 @@
   <div class="w-response mx-auto flex flex-wrap items-center justify-between">
     <a href="/">
       <img
-        src="/src/lib/images/animevsub.svg"
+        src="{logo}"
         alt="AnimeVsub"
         class="w-14 h-14"
       />
