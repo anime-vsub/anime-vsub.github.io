@@ -9,7 +9,7 @@
 import Typed from "typed.js"
 	import { browser } from '$app/environment';
 	
-	let captionRef:HTMLSpanElement;
+	let captionRef//: HTMLSpanElement;
 
 	if (browser)
 		onMount(() => {
@@ -22,7 +22,7 @@ import Typed from "typed.js"
 			});
 		});
 
-	let showToTop = true;
+	let showToTop = false;
 	if (browser)
 		document.addEventListener('scroll', () => {
 			showToTop = window.pageYOffset > 300;
