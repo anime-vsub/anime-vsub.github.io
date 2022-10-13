@@ -102,7 +102,7 @@ import Typed from "typed.js"
 
 	{#if showToTop}
 		<button
-			class="w-11 h-11 rounded-1/2 bg-[#F7ED4A] text-black fixed bottom-4 right-4 flex items-center justify-center font-weight-bold"
+			class="w-11 h-11 rounded-1/2 bg-main text-black fixed bottom-4 right-4 flex items-center justify-center font-weight-bold"
 			transition:fade={{ delay: 0, duration: 333, easing: cubicInOut }}
 			on:click={() => {
 				window.scrollTo({
@@ -143,6 +143,6 @@ import Typed from "typed.js"
 	}
 
 	.btn {
-		@apply mx-2 my-2 rounded-[3px] text-black font-weight-medium px-6 py-3 decoration-none bg-[#F7ED4A];
+		@apply mx-2 my-2 rounded-[3px] text-black font-weight-medium px-6 py-3 decoration-none bg-[var(--c-main)];
 	}
 </style>

@@ -62,7 +62,7 @@
 
 <style lang="scss">
 	.collapse {
-		@apply text-[20px] font-weight-medium text-[#F7ED4A] py-3 pl-[50px] pr-[20px] my-[14px] mx-6;
+		@apply text-[20px] font-weight-medium py-3 pl-[50px] pr-[20px] my-[14px] mx-6 text-[var(--c-main)];
 	}
 	.detail {
 		@apply py-3 pl-[50px] pr-[20px] mx-6;

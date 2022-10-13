@@ -1,9 +1,19 @@
 body {
 	@apply bg-[#000] text-[#9ca9b3];
+
+	--c-main: #f7ed4a;
+	--l-main: linear-gradient(45deg, #f7ed4a 20%, #c10023 72%);
 }
 
 .text-main {
-	color: #f7ed4a;
+	color: (var(--c-main))
+}
+.bg-main {
+	background-color:(var(--c-main));
+}
+.bg-linear-main {
+	background-color: var(--c-main);
+	background: var(--l-main);
 }
 
 .w-response {

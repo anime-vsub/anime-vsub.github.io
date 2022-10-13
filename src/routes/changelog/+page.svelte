@@ -7,9 +7,9 @@
 	<div class="log-item">
 		<div class="log-item-title">PikaShow APK <span class="log-item-tag">(v65)</span></div>
 
-		<div class="mb-3">Changelog:</div>
+		<div class="mb-3 ml-5">Changelog:</div>
 
-		<ul class="list-greek pl-[15px] mb-4 ml-3">
+		<ul class="list-greek pl-[15px] mb-4 ml-8">
 			{#each Array(6).fill('Added network speed while playing a video') as item}
 				<li class="mb-3">{item}</li>
 			{/each}

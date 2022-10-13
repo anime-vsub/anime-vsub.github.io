@@ -5,7 +5,7 @@
 	import { browser } from '$app/environment';
 
 	const navbars = [
-		{ name: 'Features', href: '#' },
+		{ name: 'Features', href: '/' },
 		{ name: 'Changelogs', href: '/changelog' },
 		{ name: 'Need Help?', href: '/help' },
 		{ name: 'FAQ', href: '/faq' }
@@ -57,7 +57,7 @@
 		{#if opening || gtSm}
 			<ul
 				transition:slide={{ delay: 0, duration: 500, easing: cubicInOut }}
-				class="text-[#F7ED4A] md:text-white w-full md:w-auto"
+				class="text-main md:text-white w-full md:w-auto"
 			>
 				{#each navbars as item}
 					<li
