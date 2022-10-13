@@ -1,7 +1,5 @@
-import { error } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
-import index from "../../data/index.yaml"
+import index from "/src/data/index.yaml"
 
-export const load: PageLoad = () => {
-  return index
-};
+export function load() {
+	return index
+}

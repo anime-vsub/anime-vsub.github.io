@@ -29,6 +29,9 @@
   "type": "module",
   "dependencies": {
     "@iconify/svelte": "^3.0.0",
+    "dayjs": "^1.11.5",
+    "filesize": "^10.0.5",
+    "svelte-i18n": "^3.4.0",
     "typed.js": "^2.0.12",
     "vite-plugin-windicss": "^1.8.8"
   }

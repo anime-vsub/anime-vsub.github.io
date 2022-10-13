@@ -4,6 +4,8 @@
   import Icon from '@iconify/svelte';
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
+import { _ } from "svelte-i18n"
+
 
   let tabActive = 0;
   const { faqs } = data;
@@ -13,7 +15,7 @@
   <h1
     class="mb-20 mt-30 font-weight-bold text-[3.5rem] md:text-[52px] text-white text-center"
   >
-    Frequently Asked Questions
+{$_("Frequently_Asked_Questions")}    
   </h1>
 
   <ul class="bg-[#161616] rounded-sm border border-[rgba(0,0,0,.125)] mb-8">

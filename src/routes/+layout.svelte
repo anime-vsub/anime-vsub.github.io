@@ -1,6 +1,7 @@
 <script lang="ts">
   import 'virtual:windi.css';
 
+	import "/src/locale"
   import './styles.scss';
 
   import Header from '../components/Header.svelte';

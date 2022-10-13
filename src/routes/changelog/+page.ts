@@ -1,14 +1,11 @@
 import { error } from '@sveltejs/kit';
 
+export const ssr = false
+
 export async function load() {
-  const name = 'PikaShow APK';
-  const changelogs = [
-    {
-      version: '65',
-      file: '',
-      messages: Array(6).fill('Added network speed while playing a video')
-    }
-  ];
+  const changelogs = (await fetch("https://api.github.com/repos/Anime-Vsub/animevsub-app/releases").then(res => res.json()))
+
+  const name = 'PikaShow';
 
   return { name, changelogs };
 }

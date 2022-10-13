@@ -3,6 +3,8 @@
 
   import '../../css/section.scss';
 
+	import { _ } from "svelte-i18n"
+
   const { sections } = data;
 </script>
 
@@ -11,7 +13,7 @@
     class="mb-20 mt-30 font-weight-bold text-[3.5rem] md:text-[52px] text-main text-center"
   >
     AnimeVsub
-    <span class="text-white">Help</span>
+    <span class="text-white">{$_("Help")}</span>
   </h1>
 
   {#each sections as section}

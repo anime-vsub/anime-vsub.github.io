@@ -14,7 +14,7 @@
   const { meta, features } = data;
 
   // =========== logic ============
-  let captionRef: HTMLSpanElement;
+  let captionRef//: HTMLSpanElement;
 
   if (browser)
     onMount(() => {

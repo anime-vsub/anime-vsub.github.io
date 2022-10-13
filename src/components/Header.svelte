@@ -2,14 +2,15 @@
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
   import logo from "$lib/images/animevsub.svg"
+import {_} from "svelte-i18n"
 
   import { browser } from '$app/environment';
 
   const navbars = [
-    { name: 'Features', href: '/' },
-    { name: 'Changelogs', href: '/changelog' },
-    { name: 'Need Help?', href: '/help' },
-    { name: 'FAQ', href: '/faq' }
+    { name: $_('Features'), href: '/' },
+    { name: $_('Changelogs'), href: '/changelog' },
+    { name: $_('Need_Help?'), href: '/help' },
+    { name: $_('FAQ'), href: '/faq' }
   ];
 
   let opening = false;
