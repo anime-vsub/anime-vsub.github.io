@@ -23,7 +23,7 @@ addMessages("vi", {
 
 locale.subscribe((value) => {
   init({
-    fallbackLocale: 'en',
+    fallbackLocale: 'vi',
     initialLocale: value
   });
 })

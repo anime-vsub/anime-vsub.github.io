@@ -1,3 +1,4 @@
+
 <script lang="ts">
   export let data;
 
@@ -33,6 +34,13 @@
       showToTop = window.pageYOffset > 300;
     });
 </script>
+
+<svelte:head>
+	<title>{data.head.title}</title>
+	<meta property="og:title" content="{data.head.title}">
+	<meta property="og:description" content="{data.head.description}">
+</svelte:head>
+
 
 <div class="bg-image" />
 

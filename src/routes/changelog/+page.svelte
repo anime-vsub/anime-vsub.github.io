@@ -10,6 +10,14 @@ import { _ } from "svelte-i18n"
 
 </script>
 
+
+<svelte:head>
+	<title>{data.head.title}</title>
+	<meta property="og:title" content="{data.head.title}">
+	<meta property="og:description" content="{data.head.description}">
+</svelte:head>
+
+
 <main class="w-response mx-4 sm:mx-auto mb-5">
   <h1
     class="mb-20 mt-30 font-weight-bold text-[3.5rem] md:text-[52px] text-main text-center"
