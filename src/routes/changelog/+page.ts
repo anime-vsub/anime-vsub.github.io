@@ -7,12 +7,11 @@ export async function load() {
     'https://api.github.com/repos/Anime-Vsub/animevsub-app/releases'
   ).then((res) => res.json());
 
-  const name = 'PikaShow';
+  const name = 'AnimeVsub';
 
   const head = {
-    title: 'PikaShow - Download PikaShow APK for Android',
-    description:
-      'PikaShow App will give you a chance to enjoy unlimited entertainment easier than on any other platform'
+    title: 'Nhật ký thay đổi - AnimeVsub',
+    description: 'Nhật ký thay đổi'
   };
 
   return {

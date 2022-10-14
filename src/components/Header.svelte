@@ -1,8 +1,8 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
-  import logo from "$lib/images/animevsub.svg"
-import {_} from "svelte-i18n"
+  import logo from '$lib/images/animevsub.svg';
+  import { _ } from 'svelte-i18n';
 
   import { browser } from '$app/environment';
 
@@ -10,7 +10,8 @@ import {_} from "svelte-i18n"
     { name: $_('Features'), href: '/' },
     { name: $_('Changelogs'), href: '/changelog' },
     { name: $_('Need_Help?'), href: '/help' },
-    { name: $_('FAQ'), href: '/faq' }
+    { name: $_('FAQ'), href: '/faq' },
+    { name: 'iOS', href: '/ios' }
   ];
 
   let opening = false;
@@ -33,12 +34,10 @@ import {_} from "svelte-i18n"
   class:bouced={bounced || (opening && !gtSm)}
 >
   <div class="w-response mx-auto flex flex-wrap items-center justify-between">
-    <a href="/">
-      <img
-        src="{logo}"
-        alt="AnimeVsub"
-        class="w-14 h-14"
-      />
+    <a href="/" class="flex items-end text-[2rem]">
+      <img src={logo} alt="AnimeVsub" class="w-14 h-14" />
+
+      <span style="font-family: Caveat">nimeVsub</span>
     </a>
 
     <button
@@ -63,15 +62,15 @@ import {_} from "svelte-i18n"
     {#if opening || gtSm}
       <ul
         transition:slide={{ delay: 0, duration: 500, easing: cubicInOut }}
-        class="text-main md:text-white w-full md:w-auto"
+        class="text-main md:!text-[#fff] w-full md:w-auto"
       >
         {#each navbars as item}
           <li
-            class="text-[16px] md:inline-block md:px-4 py-4 font-weight-bold md:py-3 md:font-weight-medium last:pr-0
+            class="text-[16px] md:inline-block font-weight-bold md:py-3 md:font-weight-medium last:children:pr-0
           nav-item
 "
           >
-            <a href={item.href}>
+            <a href={item.href} class="block  md:px-4 py-4">
               {item.name}
             </a>
           </li>

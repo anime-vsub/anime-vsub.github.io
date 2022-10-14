@@ -1,30 +1,33 @@
 ---
 head:
-  title: PikaShow - Download PikaShow APK for Android
-  description: PikaShow App will give you a chance to enjoy unlimited entertainment easier than on any other platform
-
+  title: Câu hỏi thường gặp - AnimeVsub
+  description: Câu hỏi thường gặp
 
 faqs:
-- name: What is PikaShow App?
-  content: PikaShow is an all-in-one entertainment platform that will give access
-    to stream or download all the latest movies, web series and watch live tv channels
-    for free of charge.
-- name: Is it available on Google Play Store?
-  content: Google won't allow this kind of apps to be on Play Store. Don't look for
-    PikaShow on the Google Play Store.\n\nYou can only download and install PikaShow
-    APK from our website.
-- name: Is it safe to download and use?
-  content: Yes, PikaShow APK is 100% safe to use and, data security is the main priority
-    of the dev team.
-- name: Is it free to use?
-  content: Yes, it is a free streaming app where you can find all the premium content
-    for free to watch without any subscription or registration.
-- name: Does it require a rooted Android device?
-  content: No, you don't need to have a rooted android mobile to install and use the
-    PikaShow app. It will work on any android device which has Android 4.0 or above
-    version.
-- name: Can I watch PikaShow videos on TV?
-  content: Yes, you can watch any movie, tv channel on your TV using the PikaShow.
-    If you have an Android or FireStick TV, you can install PikaShow APK on your TV.
-    Read the full guide here\n\nIf you don't want to install PikaShow on your TV,
-    you can easily screencast your mobile to the TV.
+  - name: Ứng dụng AnimeVsub là gì?
+    content: AnimeVsub là một nền tảng giải trí tất cả trong một sẽ cung cấp quyền truy cập để phát trực tuyến hoặc tải xuống tất cả các bộ phim, web series mới nhất và xem các kênh truyền hình trực tiếp miễn phí.
+  - name: Nó có sẵn trên Cửa hàng Google Play không?
+    content:
+      Google sẽ không cho phép loại ứng dụng này xuất hiện trên Cửa hàng Play. Đừng tìm AnimeVsub trên Cửa hàng Google Play.
+
+
+      Bạn chỉ có thể tải xuống và cài đặt APK AnimeVsub từ trang web của chúng tôi.Nó có sẵn trên Cửa hàng Google Play không?
+      Google sẽ không cho phép loại ứng dụng này xuất hiện trên Cửa hàng Play. Đừng tìm AnimeVsub trên Cửa hàng Google Play.
+
+
+      Bạn chỉ có thể tải xuống và cài đặt APK AnimeVsub từ trang web của chúng tôi.
+  - name: Có an toàn để tải về và sử dụng không?
+    content: Có, AnimeVsub an toàn 100% để sử dụng và bảo mật dữ liệu là ưu tiên chính của nhóm nhà phát triển.
+  - name: Nó có miễn phí để sử dụng không?
+    content: Vâng, đây là một ứng dụng phát trực tuyến miễn phí, nơi bạn có thể tìm thấy tất cả nội dung cao cấp để xem miễn phí mà không cần đăng ký hoặc đăng ký.
+  - name: Nó có yêu cầu thiết bị Android đã root không?
+    content:
+      Không, bạn không cần phải có thiết bị di động Android đã root để cài đặt và sử dụng
+      Ứng dụng AnimeVsub. Nó sẽ hoạt động trên bất kỳ thiết bị Android nào có Android 4.0 trở lên
+      phiên bản.
+  - name: Tôi có thể xem video AnimeVsub trên TV không?
+    content:
+      Có, bạn có thể xem bất kỳ bộ phim, kênh truyền hình nào trên TV của mình bằng AnimeVsub.
+      Nếu bạn có Android hoặc FireStick TV, bạn có thể cài đặt APK AnimeVsub trên TV của mình.
+      Đọc hướng dẫn đầy đủ tại đây  n  nNếu bạn không muốn cài đặt AnimeVsub trên TV của mình,
+      bạn có thể dễ dàng truyền màn hình điện thoại di động của mình lên TV.

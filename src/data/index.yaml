@@ -15,25 +15,23 @@ meta:
       AnimeVsub sẽ mang đến cơ hội xem Anime riêng tư và không có giới hạn
 
       Dễ dàng hơn bất kì nền tảng nào khác
-    
+
 
       Tải xuống AnimeVsub ngay hôm nay
     name: Tải xuống
   cards:
-    - icon: /src/lib/images/animevsub.svg
+    - icon: /favicon.svg
       title: AnimeVsub là gì?
       content:
         AnimeVsub là một nền tảng phát trực tuyến cho Android! Bao gồm các bộ Anime mới nhất, download video, và nhiều thứ khác nữa. Tất cả chỉ vì một mục đích giải trí
-        
+
         ứng dụng cung cấp nội dung cao cấp miễn phí.
     - icon: simple-icons:adblock
       title: Riêng tư và an toàn
-      content:
-        AnimeVsub đi kèm với trình kiểm tra dữ liệu và module hls tùy chỉnh đảm bảo sự riêng tư và không có quảng cáo cho bạn. Hãy yên tâm thưởng thức Anime mà không phải lo sợ về bảo mật
+      content: AnimeVsub đi kèm với trình kiểm tra dữ liệu và module hls tùy chỉnh đảm bảo sự riêng tư và không có quảng cáo cho bạn. Hãy yên tâm thưởng thức Anime mà không phải lo sợ về bảo mật
     - icon: fluent:hd-16-regular
       title: Chất lượng HD
-      content:
-        Cung cấp nội dung cao cấp chất lượng. Phát tất cả các video HD mượt mà và cho phép điều chỉnh chất lượng phát lại từ 240p, 480p, 720p, 1080p và lên đến 4K tùy thuộc vào tốc độ kết nối.
+      content: Cung cấp nội dung cao cấp chất lượng. Phát tất cả các video HD mượt mà và cho phép điều chỉnh chất lượng phát lại từ 240p, 480p, 720p, 1080p và lên đến 4K tùy thuộc vào tốc độ kết nối.
 features:
   name: Đặc trưng
   description: Danh sách tất cả các tính năng độc quyền của Ứng dụng AnimeVsub.
@@ -46,6 +44,35 @@ features:
         - Có khả năng tải phim và chương trình TV trên thiết bị của bạn. Bạn có thể chọn phát trực tiếp hoặc tải video xuống và xem ngoại tuyến.
         - Hỗ trợ phụ đề cho mọi video. Bạn có thể bật phụ đề trong khi xem. Trong mọi trường hợp, nếu phụ đề không có sẵn, bạn sẽ có thể tìm kiếm phụ đề trực tuyến với tùy chọn được cung cấp trong ứng dụng.
         - Tùy chọn truyền màn hình cho bạn cơ hội truyền màn hình di động của mình tới TV mà không do dự.
-        - Ứng dụng PikaShow cũng hỗ trợ Android TV và FireStick.
+        - Ứng dụng AnimeVsub cũng hỗ trợ Android TV và FireStick.
       images:
-        - https://pikashows.com/assets/img/features_1.webp
+        - /screenshots/Screenshot_2022-10-05-22-28-37-000_git.shin.animevsub.jpg
+        - /screenshots/Screenshot_2022-10-05-22-29-39-832_git.shin.animevsub.jpg
+    - title: Tìm kiếm và cá nhân hóa
+      uls:
+        - Hệ thống bảng xếp hạng, phân loại Anime theo từng thể loại
+        - Lịch chiếu Anime cập nhật và thông báo
+        - Tìm kiếm Anime dễ dàng
+        - Xem lại các bộ Anime bạn đã xem. Đồng bộ hóa với đám mây
+      images:
+        - /screenshots/Screenshot_2022-10-05-22-33-12-869_git.shin.animevsub.jpg
+        - /screenshots/Screenshot_2022-10-13-17-09-06-063_git.shin.animevsub.jpg
+    - title: Tin tức Anime mới nhất
+      uls:
+        - Chúng tôi tự hào được cấp phép lưu hành tin tức Anime từ các Website về Anime uy tín nhất
+        - Bạn sẽ nhận được thông báo mỗi khi Anime bạn theo dõi có cập nhật mới
+      images:
+        - /screenshots/Screenshot_2022-10-06-07-26-11-027_git.shin.animevsub.jpg
+        - /screenshots/Screenshot_2022-10-13-17-09-13-504_git.shin.animevsub.jpg
+    - title: Trình phát Anime tốc độ cao và bảo mật
+      uls:
+        - AnimeVsub sở hữu một thư viện phân giải Http Live Stream tốc độ cao riêng biệt sử dụng kết hợp với Java (trên Android) và Swift (trên iOS) cho phép bạn xem Anime với chất lượng HD kể cả khi mạng yếu
+        - Ứng dụng  có thiết kế UI / UX đơn giản và gọn gàng mà mọi người đều có thể xem các bộ phim yêu thích
+        - Bạn có thể thay đổi tốc độ phát lại từ 0,25x đến 2x trên mọi video
+        - Tua nhanh Anime bằng cách nhấn giữ và vuốt trên màn hình hoặc nhấn đúp để tua/phát lại 10s
+        - Khả năng thay đổi chất lượng video và cài đặt âm thanh thành mono hoặc stereo đơn giản trong trình phát
+        - Bạn có thể phát video ở chế độ PiP (Hình ảnh trong Hình ảnh).
+        - AnimeVsub ỗ trợ phản hồi nhanh chóng. Người dùng có thể liên hệ với các nhà phát triển ứng dụng  và báo cáo vấn đề của họ một cách dễ dàng.
+      images:
+        - /screenshots/Screenshot_2022-10-05-22-29-57-310_git.shin.animevsub.jpg
+        - /screenshots/Screenshot_2022-10-05-22-31-48-569_git.shin.animevsub.jpg

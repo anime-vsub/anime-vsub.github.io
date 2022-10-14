@@ -5,7 +5,7 @@ const config = {
   kit: {
     adapter: adapter()
   },
-  trailingSlash: "never"
+  trailingSlash: 'never'
 };
 
 export default config;

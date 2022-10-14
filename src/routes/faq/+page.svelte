@@ -4,26 +4,23 @@
   import Icon from '@iconify/svelte';
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
-import { _ } from "svelte-i18n"
-
+  import { _ } from 'svelte-i18n';
 
   let tabActive = 0;
   const { faqs } = data;
 </script>
 
-
 <svelte:head>
-	<title>{data.head.title}</title>
-	<meta property="og:title" content="{data.head.title}">
-	<meta property="og:description" content="{data.head.description}">
+  <title>{data.head.title}</title>
+  <meta property="og:title" content={data.head.title} />
+  <meta property="og:description" content={data.head.description} />
 </svelte:head>
-
 
 <main class="w-response mx-4 sm:mx-auto">
   <h1
     class="mb-20 mt-30 font-weight-bold text-[3.5rem] md:text-[52px] text-white text-center"
   >
-{$_("Frequently_Asked_Questions")}    
+    {$_('Frequently_Asked_Questions')}
   </h1>
 
   <ul class="bg-[#161616] rounded-sm border border-[rgba(0,0,0,.125)] mb-8">

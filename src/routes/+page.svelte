@@ -1,4 +1,3 @@
-
 <script lang="ts">
   export let data;
 
@@ -15,7 +14,7 @@
   const { meta, features } = data;
 
   // =========== logic ============
-  let captionRef//: HTMLSpanElement;
+  let captionRef; //: HTMLSpanElement;
 
   if (browser)
     onMount(() => {
@@ -36,17 +35,19 @@
 </script>
 
 <svelte:head>
-	<title>{data.head.title}</title>
-	<meta property="og:title" content="{data.head.title}">
-	<meta property="og:description" content="{data.head.description}">
+  <title>{data.head.title}</title>
+  <meta property="og:title" content={data.head.title} />
+  <meta property="og:description" content={data.head.description} />
 </svelte:head>
-
 
 <div class="bg-image" />
 
 <div class="h-[100vh] w-full flex items-center justify-center">
   <div class="w-full w-response text-white">
-    <h1 class="text-[4.5rem] font-weight-bold text-center mb-6">
+    <h1
+      class="text-[4.5rem] font-weight-bold text-center mb-6"
+      style="font-family: Caveat"
+    >
       Anime<span class="text-main px-0">Vsub</span>
     </h1>
     <h3 class="text-[1.5rem] sm:text-[32px] md:text-[3.5rem] text-center mb-2">
@@ -73,7 +74,11 @@
       {#each meta.cards as card}
         <div class="card">
           <div class="large-icon">
-            <img src={card.icon} alt="pika" width="70" />
+            {#if card.icon.includes('.')}
+              <img src={card.icon} alt="screenshot" width="70" />
+            {:else}
+              <Icon icon={card.icon} width="70" height="70" />
+            {/if}
           </div>
 
           <div class="card-title">{card.title}</div>
@@ -133,10 +138,10 @@
     @apply absolute w-full h-[100vh];
 
     // background: {
-    background-image: url('https://pikashows.com/assets/img/intro-bg.webp');
+    background-image: url('$lib/images/first-onlyphone.dark.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto 80%;
     background-position: center;
     // }
 

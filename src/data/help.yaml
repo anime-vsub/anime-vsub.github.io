@@ -1,18 +1,37 @@
 ---
 head:
-  title: PikaShow - Download PikaShow APK for Android
-  description: PikaShow App will give you a chance to enjoy unlimited entertainment easier than on any other platform
-
+  title: Trợ giúp - AnimeVsub
+  description: Có vấn đề gì khi cài đặt ứng dụng Pika Show không? Đây là hướng dẫn.
 
 sections:
-- title: 'Installation Instrucions:'
-  sub: For FireStick
-  sub2: If you have Amazon FireStick, follow these instructions to install the app.
-  content: 'Having trouble installing or using PikaShow APK on your Android device
-    and TV? Android version should be 4.0 or above.\n\nThe instructions to use the
-    PikaShow app are below:'
-  ols:
-  - ok 1
-  - ok 1
-  - ok 1
-  - ok 1
+  - content:
+      Bạn gặp sự cố khi cài đặt hoặc sử dụng AnimeVsub trên thiết bị Android và TV của mình? Phiên bản Android phải là 4.0 trở lên.
+
+
+      Dưới đây là hướng dẫn sử dụng ứng dụng AnimeVsub
+
+  - title: Hướng dẫn cài đặt
+    sub: 'Đối với Android Mobile / TV:'
+    sub2: Nếu bạn có Android TV hoặc Điện thoại, hãy làm theo các hướng dẫn sau để cài đặt ứng dụng.
+    ols:
+      - Tải xuống AnimeVsub phiên bản mới nhất từ ​​trang web của chúng tôi.
+      - 'Điều hướng đến Cài đặt trên thiết bị của bạn và cho phép cài đặt từ "Nguồn không xác định" trong Bảo mật.'
+      - Tìm AnimeVsub đã tải xuống trong trình quản lý tệp và mở nó để bắt đầu quá trình cài đặt.
+      - Sau khi cài đặt xong, hãy mở AnimeVsub và tận hưởng!
+
+  - sub: Đối với FireStick
+    sub2: Nếu bạn có Amazon FireStick, hãy làm theo các hướng dẫn sau để cài đặt ứng dụng.
+    ols:
+      - Mở Cài đặt FireStick trên Android TV của bạn.
+      - 'Đi tới "My Fire TV" và chọn "Tùy chọn nhà phát triển" từ danh sách.'
+      - 'Bật "Gỡ lỗi ADB" và "Ứng dụng từ các nguồn không xác định"'
+      - 'Bây giờ quay lại màn hình chính, mở Amazon Apps Store và tải xuống ứng dụng "Trình tải xuống"'
+      - 'Sau khi cài đặt hoàn tất, hãy mở ứng dụng "Trình tải xuống" và cho phép quyền truy cập tệp.'
+      - Chọn phần URL và truy cập https://anime-vsub.github.io để tải xuống AnimeVsub.
+      - Cài đặt AnimeVsub và tận hưởng!
+  - title: Làm thế nào để tải xuống Video / Phim trong AnimeVsub?
+    ols:
+      - Ứng dụng AnimeVsub đi kèm với tùy chọn tải xuống video. Làm theo các hướng dẫn sau để tải xuống bất kỳ bộ phim / chương trình truyền hình nào.
+      - Tải xuống và cài đặt phiên bản mới nhất của Ứng dụng AnimeVsub từ trang web của chúng tôi.
+      - Mở AnimeVsub và chọn bất kỳ bộ phim / chương trình truyền hình nào bạn muốn tải xuống.
+      - Nhấn nút tải xuống bên cạch nút chia sẻ.

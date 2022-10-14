@@ -1,6 +1,5 @@
-import faq from "/src/data/faq.yaml"
+import faq from '/src/data/faq.yaml';
 
 export function load() {
-	
   return faq;
 }
