@@ -32,6 +32,26 @@
     document.addEventListener('scroll', () => {
       showToTop = window.pageYOffset > 300;
     });
+
+  const userAgent =
+    typeof navigator !== 'undefined'
+      ? navigator.userAgent?.toLowerCase()
+      : undefined;
+  const logoBrowser =
+    (userAgent
+      ? [
+          ['chrome', 'logos:chrome'],
+          ['firefox', 'logos:firefox'],
+          ['opera', 'logos:opera'],
+          ['safari', 'logos:safari'],
+          ['brave', 'logos:brave'],
+          ['vivaldi', 'logos:vivaldi-icon'],
+          ['edge', 'logos:microsoft-edge'],
+          ['fuchsia', 'logos:fuchsia'],
+          ['yandex', 'logos:yandex-ru'],
+          ['tor', 'logos:tor']
+        ].find((item) => userAgent.includes(item[0]))?.[1]
+      : undefined) ?? 'logos:webkit';
 </script>
 
 <svelte:head>
@@ -53,6 +73,28 @@
     <h3 class="text-[1.5rem] sm:text-[32px] md:text-[3.5rem] text-center mb-2">
       <span bind:this={captionRef} />
     </h3>
+    <div class="text-center text-weight-bold mt-8">
+      <a
+        class="inline-block py-2 px-4 bg-dark-600 inline-flex items-center rounded-[30px] mr-2"
+        href={meta.download.file}
+      >
+        <Icon
+          icon={meta.download.file
+            ?  'logos:android-vertical' : 'line-md:loading-loop'
+            }
+          width="35"
+          height="35"
+          class="mr-1"
+        /> Tải xuống APK
+      </a>
+      <a
+        class="inline-block py-2 px-4 bg-blue-600 inline-flex items-center rounded-[30px] ml-2"
+        href="https://animevsub.ga"
+      >
+        <Icon icon={logoBrowser} width="35" height="35" class="mr-1" /> Phiên bản
+        Web
+      </a>
+    </div>
   </div>
 </div>
 
