@@ -1,1 +1,0 @@
-import{i as e}from"./runtime.esm-fdbe46db.js";const r=!0;async function o(){return e()}const a=Object.freeze(Object.defineProperty({__proto__:null,prerender:r,preload:o},Symbol.toStringTag,{value:"Module"}));export{a as _,o as a,r as p};
