@@ -11,6 +11,7 @@
     { name: $_('Changelogs'), href: '/changelog' },
     { name: $_('Need_Help?'), href: '/help' },
     { name: $_('FAQ'), href: '/faq' },
+    { name: $_('Desktop'), href: 'https://animevsub.ga' },
     { name: 'iOS', href: '/ios' }
   ];
 
@@ -22,15 +23,16 @@
       bounced = window.pageYOffset > 40;
     });
 
-  let gtSm = browser && window.innerWidth > 768;
+  let gtSm = browser && window.innerWidth > 1023.99;
   function onResize() {
-    let gtSm = window.innerWidth > 768;
+    let gtSm = window.innerWidth > 1023.99;
   }
   if (browser) window.addEventListener('resize', onResize);
 </script>
 
 <header
   class="header fixed top-0 left-0 py-[25px] px-4 transition-all duration-500 ease-in-out w-full"
+  style="z-index: 9999"
   class:bouced={bounced || (opening && !gtSm)}
 >
   <div class="w-response mx-auto flex flex-wrap items-center justify-between">

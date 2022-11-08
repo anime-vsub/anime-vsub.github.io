@@ -76,9 +76,12 @@
     }
 
     &-images {
-      @apply md:whitespace-nowrap overflow-x-auto scrollbar-hide min-w-0 flex-1 md:w-auto w-full md:flex;
+      @apply md:whitespace-nowrap  min-w-0 flex-1 md:w-auto w-full flex flex-wrap;
+      > div {
+        @apply inline-block
+      }
       img {
-        @apply inline-block relative py-[20px] block mx-auto sm:inline-block md:px-[20px] min-w-0;
+        @apply relative py-[20px] block mx-auto sm:inline-block md:px-[20px] min-w-0 sm:max-w-[294px];
       }
     }
   }

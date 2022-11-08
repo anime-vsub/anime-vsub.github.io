@@ -18,7 +18,8 @@ addMessages('vi', {
   Features: 'Đặc điểm',
   Changelogs: 'Thay đổi',
   'Need_Help?': 'Cần giúp đỡ?',
-  FAQ: 'Câu hỏi thường gặp'
+  FAQ: 'Câu hỏi thường gặp',
+  Desktop: 'Phiêm bản cho máy tính'
 });
 
 locale.subscribe((value) => {

@@ -108,7 +108,9 @@
         </div>
         <div class="splitter-images">
           {#each feature.images as image}
-            <img src={image} alt="screenshot" />
+            <div>
+              <img src={image} alt="screenshot" />
+            </div>
           {/each}
         </div>
       </div>
