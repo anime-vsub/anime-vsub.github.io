@@ -5,6 +5,7 @@
   import { filesize } from 'filesize';
   import dayjs from '/src/logic/dayjs';
   import { _ } from 'svelte-i18n';
+  import { parseMdBasic } from '/src/logic/parseMdBasic'
 
   const { name, changelogs } = data;
 </script>
@@ -58,7 +59,7 @@
 
       <div class="mb-3 ml-3">{$_('Changelog')}:</div>
 
-      <div class="whitespace-pre-wrap mb-4 ml-3">{@html changelog.body}</div>
+      <div class="whitespace-pre-wrap mb-4 ml-3">{@html parseMdBasic(changelog.body)}</div>
 
       <ul class="border border-gray-500 rounded-xl max-w-[550px]">
         {#each changelog.assets as asset}
