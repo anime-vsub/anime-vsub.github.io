@@ -11,7 +11,7 @@
     { name: $_('Changelogs'), href: '/changelog' },
     { name: $_('Need_Help?'), href: '/help' },
     { name: $_('FAQ'), href: '/faq' },
-    { name: $_('Desktop'), href: 'https://animevsub.ga' },
+    { name: $_('Desktop'), href: 'https://animevsub.eu.org' },
     { name: 'iOS', href: '/ios' }
   ];
 
