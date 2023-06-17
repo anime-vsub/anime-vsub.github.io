@@ -74,7 +74,7 @@
       <span bind:this={captionRef} />
     </h3>
     <div class="text-center text-weight-bold mt-8">
-      <a
+      <!-- <a
         class="inline-block py-2 px-4 bg-dark-600 inline-flex items-center rounded-[30px] mr-2"
         href={meta.download.file}
       >
@@ -86,10 +86,23 @@
           height="35"
           class="mr-1"
         /> Tải xuống APK
+      </a> -->
+      <a
+        class="inline-block py-2 px-4 bg-dark-600 inline-flex items-center rounded-[30px] mr-2"
+        href="https://github.com/anime-vsub/app/install-pwa.md"
+      >
+        <Icon
+          icon={meta.download.file
+            ?  'logos:android-vertical' : 'line-md:loading-loop'
+            }
+          width="35"
+          height="35"
+          class="mr-1"
+        /> Hướng dẫn cài đặt PWA
       </a>
       <a
         class="inline-block py-2 px-4 bg-blue-600 inline-flex items-center rounded-[30px] ml-2"
-        href="https://animevsub.ga"
+        href="https://animevsub.eu.org"
       >
         <Icon icon={logoBrowser} width="35" height="35" class="mr-1" /> Phiên bản
         Web
@@ -107,7 +120,10 @@
 
       <!-- <div class="mb-4"></div> -->
 
-      <a target="_blank" href={meta.download.file}>
+      <!-- <a target="_blank" href={meta.download.file}>
+        <button class="btn">{meta.download.versionName}</button>
+      </a> -->
+      <a target="_blank" href="https://github.com/anime-vsub/app/install-pwa.md">
         <button class="btn">{meta.download.versionName}</button>
       </a>
     </div>

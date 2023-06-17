@@ -13,7 +13,7 @@ export async function load() {
 
     Object.assign(index.meta.download, {
       versionName: `Tải xuống AnimeVsub (${latest.tag_name})`,
-      file: latest.assets[0].browser_download_url
+      file: latest.assets?.[0]?.browser_download_url ?? 'unknown'
     });
   }
 
