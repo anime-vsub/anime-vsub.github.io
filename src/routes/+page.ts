@@ -9,7 +9,7 @@ export async function load() {
     ).then((res) => res.json());
 
     const latest =
-      allVersions.find((item) => !item.prerelease) ?? allVersions[0];
+      allVersions.find((item) => !item.prerelease && !item.tag_name.startsWith("pwa-")) ?? allVersions[0];
 
     Object.assign(index.meta.download, {
       versionName: `Tải xuống AnimeVsub (${latest.tag_name})`,

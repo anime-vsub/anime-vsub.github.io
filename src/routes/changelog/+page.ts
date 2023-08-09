@@ -5,7 +5,7 @@ export const ssr = false;
 export async function load() {
   const changelogs = await fetch(
     'https://api.github.com/repos/Anime-Vsub/animevsub-app/releases'
-  ).then((res) => res.json());
+  ).then((res) => res.json()).then(items => items.filter(item => !item.tag_name.startsWith("pwa-")));
 
   const name = 'AnimeVsub';
 
